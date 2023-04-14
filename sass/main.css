@@ -1,0 +1,253 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: #353738;
+}
+
+.nav {
+  background-color: #353738;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  border-bottom-left-radius: 0.5rem;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1200px;
+  box-shadow: 0px 5px 5px -5px #000;
+}
+.nav__title {
+  padding: 2rem;
+  letter-spacing: 1px;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.nav__links {
+  display: flex;
+  gap: 2rem;
+  padding: 2rem;
+}
+.nav__links a {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+.nav__links a:hover {
+  color: rgb(77, 76, 76);
+}
+
+.main {
+  background-color: #5b5b5b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main__container {
+  width: 250px;
+  height: 250px;
+  margin: 4rem 0 1rem;
+}
+.main__container img {
+  width: 100%;
+  border-radius: 50%;
+  transform: rotate(90deg);
+}
+.main__line {
+  display: grid;
+  grid-template-columns: 1fr 5rem 1fr;
+  justify-items: center;
+  align-items: center;
+}
+.main .starIcon {
+  background-image: url(../../assets/estrellaWhiteColor.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 3rem;
+  width: 60px;
+  height: 70px;
+}
+.main .linea {
+  border: 2px solid #ffffff;
+  background-color: #ffffff;
+  width: 150px;
+  height: 5px;
+}
+.main .title {
+  color: #ffffff;
+  font-size: 4rem;
+  font-weight: 500;
+}
+.main h2 {
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  margin-bottom: 5rem;
+}
+
+.portfolio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #353738;
+  font-size: 2rem;
+  font-weight: 600;
+  background-color: #ffffff;
+  margin-top: 4rem;
+  height: 40rem;
+}
+.portfolio__container {
+  display: flex;
+  flex-direction: row;
+}
+.portfolio__container .portfolio__item {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.portfolio__container .portfolio__item img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 200px;
+  height: 200px;
+  border-radius: 1rem;
+}
+.portfolio__container .portfolio__item .portfolio__name {
+  font-size: 1.1rem;
+  padding: 0.5rem;
+  margin-bottom: 4rem;
+}
+.portfolio__line {
+  display: grid;
+  grid-template-columns: 1fr 5rem 1fr;
+  justify-items: center;
+  align-items: center;
+}
+.portfolio .starIcon {
+  background-image: url(../../assets/estrellaPrimaryColor.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 2.5rem;
+  width: 60px;
+  height: 70px;
+}
+.portfolio .linea {
+  border: 2px solid #353738;
+  background-color: #353738;
+  width: 100px;
+  height: 5px;
+}
+
+.about {
+  background-color: #5b5b5b;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 600;
+  height: 40rem;
+}
+.about h3 {
+  margin-top: 2rem;
+}
+.about__line {
+  display: grid;
+  grid-template-columns: 1fr 5rem 1fr;
+  justify-items: center;
+  align-items: center;
+}
+.about .starIcon {
+  background-image: url(../../assets/estrellaWhiteColor.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 2rem;
+  width: 60px;
+  height: 70px;
+}
+.about .linea {
+  border: 2px solid #ffffff;
+  background-color: #ffffff;
+  width: 100px;
+  height: 5px;
+}
+.about__container {
+  width: 400px;
+  text-align: start;
+  margin-bottom: 2rem;
+}
+.about__container p {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.contact {
+  height: 40rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #353738;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.contact__line {
+  display: grid;
+  grid-template-columns: 1fr 5rem 1fr;
+  justify-items: center;
+  align-items: center;
+}
+.contact .starIcon {
+  background-image: url(../../assets/estrellaPrimaryColor.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 2.5rem;
+  width: 60px;
+  height: 70px;
+}
+.contact .linea {
+  border: 2px solid #353738;
+  background-color: #353738;
+  width: 100px;
+  height: 5px;
+}
+.contact__wrap {
+  display: flex;
+  flex-direction: row;
+}
+.contact__wrap .contact__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact__wrap .contact__container .contact__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #353738;
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+}
+.contact__wrap .contact__container .contact__item img {
+  width: 2.5rem;
+  filter: invert(1);
+}
+.contact__wrap .contact__container .contact__span {
+  font-size: 1.5rem;
+  font-weight: 300;
+}/*# sourceMappingURL=main.css.map */

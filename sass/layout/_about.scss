@@ -1,0 +1,46 @@
+@use "../variables/variables" as c;
+.about {
+  background-color: c.$primary-color;
+  color: c.$white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: 600;
+  height: 40rem;
+  h3 {
+    margin-top: 2rem;
+  }
+
+  &__line {
+    display: grid;
+    grid-template-columns: 1fr 5rem 1fr;
+    justify-items: center;
+    align-items: center;
+  }
+  .starIcon {
+    background-image: url(../../assets/estrellaWhiteColor.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 2rem;
+    width: 60px;
+    height: 70px;
+  }
+  .linea {
+    border: 2px solid c.$white;
+    background-color: c.$white;
+    width: 100px;
+    height: 5px;
+  }
+  &__container {
+    width: 400px;
+
+    text-align: start;
+    margin-bottom: 2rem;
+    p {
+      font-size: 1.1rem;
+      font-weight: 400;
+    }
+  }
+}

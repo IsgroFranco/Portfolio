@@ -1,0 +1,59 @@
+@use "../variables/variables" as c;
+
+.contact {
+  height: 40rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: c.$secondary-color;
+  font-size: 2rem;
+  font-weight: 600;
+  &__line {
+    display: grid;
+    grid-template-columns: 1fr 5rem 1fr;
+    justify-items: center;
+    align-items: center;
+  }
+  .starIcon {
+    background-image: url(../../assets/estrellaPrimaryColor.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 2.5rem;
+    width: 60px;
+    height: 70px;
+  }
+  .linea {
+    border: 2px solid c.$secondary-color;
+    background-color: c.$secondary-color;
+    width: 100px;
+    height: 5px;
+  }
+  &__wrap {
+    display: flex;
+    flex-direction: row;
+    .contact__container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .contact__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: c.$secondary-color;
+        border-radius: 50%;
+        width: 4rem;
+        height: 4rem;
+        img {
+          width: 2.5rem;
+          filter: invert(1);
+        }
+      }
+      .contact__span {
+        font-size: 1.5rem;
+        font-weight: 300;
+      }
+    }
+  }
+}
