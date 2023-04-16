@@ -4,7 +4,7 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Prompt";
   scroll-behavior: smooth;
 }
 
@@ -13,19 +13,30 @@ header {
   position: fixed;
   z-index: 1000;
   width: 100%;
-  box-shadow: 0px 1px 8px;
+  box-shadow: 0px 1px 8px rgb(0, 0, 0);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  height: 4rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+}
+
+.nav__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .nav {
   background-color: #353738;
   display: flex;
-  justify-content: center;
   justify-content: space-between;
   align-items: center;
-  color: #ffffff;
-  margin: 0 auto;
-  width: 90%;
-  height: 4.5rem;
   max-width: 1200px;
 }
 .nav__title {
@@ -37,7 +48,6 @@ header {
 .nav__links {
   display: flex;
   gap: 2rem;
-  padding: 2rem;
 }
 .nav__links a {
   color: #ffffff;
@@ -46,6 +56,15 @@ header {
 }
 .nav__links a:hover {
   color: rgb(77, 76, 76);
+}
+
+.abrir-menu,
+.cerrar-menu {
+  display: none;
+  background-color: transparent;
+  color: #ffffff;
+  border: none;
+  font-size: 1.9rem;
 }
 
 .main {
@@ -108,6 +127,7 @@ header {
   background-color: #ffffff;
   margin-top: 4rem;
   height: 40rem;
+  scroll-margin-top: 100px;
 }
 .portfolio__container {
   display: flex;
@@ -169,6 +189,7 @@ header {
   font-size: 2rem;
   font-weight: 600;
   height: 40rem;
+  scroll-margin-top: 100px;
 }
 .about h3 {
   margin-top: 2rem;
@@ -202,6 +223,7 @@ header {
 .about__container p {
   font-size: 1.1rem;
   font-weight: 400;
+  text-align: justify;
 }
 
 .contact {
@@ -213,6 +235,7 @@ header {
   color: #353738;
   font-size: 2rem;
   font-weight: 600;
+  scroll-margin-top: 100px;
 }
 .contact__line {
   display: grid;
@@ -317,4 +340,76 @@ header {
   margin: 0;
   font-size: 1.5rem;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.copyright {
+  background-color: #1c1d1e;
+  display: flex;
+  justify-content: center;
+}
+.copyright__text {
+  color: #ffffff;
+  padding: 1.5rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    position: absolute;
+    flex-direction: column;
+    top: 3.5rem;
+    right: 0;
+    bottom: 0;
+    visibility: hidden;
+  }
+  .nav__links {
+    background-color: #353738;
+    flex-direction: column;
+    padding: 2rem;
+  }
+  .visible {
+    opacity: 1;
+    visibility: visible;
+  }
+  .abrir-menu,
+  .cerrar-menu {
+    display: block;
+  }
+  .main .title {
+    text-align: center;
+    font-size: 2.5rem;
+    padding: 1rem;
+  }
+  .main .linea {
+    width: 100px;
+  }
+  .main h2 {
+    font-size: 1.2rem;
+  }
+  .portfolio {
+    height: unset;
+  }
+  .portfolio .portfolio__container {
+    flex-direction: column;
+  }
+  .about {
+    height: unset;
+  }
+  .about__container {
+    width: unset;
+  }
+  .about__container p {
+    font-size: 1rem;
+    padding: 2rem;
+  }
+  .contact__wrap {
+    flex-direction: column;
+  }
+  .footer {
+    height: unset;
+    grid-template-columns: unset;
+  }
+  .footer p {
+    margin-bottom: 2rem;
+  }
 }/*# sourceMappingURL=main.css.map */

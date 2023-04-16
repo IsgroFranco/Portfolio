@@ -9,6 +9,7 @@
   color: c.$secondary-color;
   font-size: 2rem;
   font-weight: 600;
+  scroll-margin-top: 100px;
   &__line {
     display: grid;
     grid-template-columns: 1fr 5rem 1fr;

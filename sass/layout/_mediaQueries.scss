@@ -1,0 +1,66 @@
+@use "../variables/variables" as c;
+
+@media (max-width: 768px) {
+  .nav {
+    position: absolute;
+    flex-direction: column;
+    top: 3.5rem;
+    right: 0;
+    bottom: 0;
+    visibility: hidden;
+
+    &__links {
+      background-color: c.$secondary-color;
+      flex-direction: column;
+      padding: 2rem;
+    }
+  }
+  .visible {
+    opacity: 1;
+    visibility: visible;
+  }
+  .abrir-menu,
+  .cerrar-menu {
+    display: block;
+  }
+  .main {
+    .title {
+      text-align: center;
+      font-size: 2.5rem;
+      padding: 1rem;
+    }
+    .linea {
+      width: 100px;
+    }
+    h2 {
+      font-size: 1.2rem;
+    }
+  }
+  .portfolio {
+    height: unset;
+
+    .portfolio__container {
+      flex-direction: column;
+    }
+  }
+  .about {
+    height: unset;
+  }
+  .about__container {
+    width: unset;
+    p {
+      font-size: 1rem;
+      padding: 2rem;
+    }
+  }
+  .contact__wrap {
+    flex-direction: column;
+  }
+  .footer {
+    height: unset;
+    grid-template-columns: unset;
+    p {
+      margin-bottom: 2rem;
+    }
+  }
+}
