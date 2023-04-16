@@ -22,6 +22,9 @@ header {
   align-items: center;
   width: 80%;
   margin: 0 auto;
+  a {
+    color: c.$white;
+  }
 }
 
 .nav {
@@ -46,6 +49,9 @@ header {
       font-size: 1.1rem;
       &:hover {
         color: rgb(77, 76, 76);
+      }
+      &:active {
+        background-color: transparent;
       }
     }
   }

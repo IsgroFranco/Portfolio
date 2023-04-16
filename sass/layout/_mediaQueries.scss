@@ -19,9 +19,12 @@
     opacity: 1;
     visibility: visible;
   }
-  .abrir-menu,
-  .cerrar-menu {
+
+  .abrir-menu {
     display: block;
+  }
+  .cerrar-menu {
+    display: none;
   }
   .main {
     .title {

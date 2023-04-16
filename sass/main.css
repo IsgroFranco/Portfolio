@@ -4,7 +4,7 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
-  font-family: "Prompt";
+  font-family: "Prompt", "sans-serif";
   scroll-behavior: smooth;
 }
 
@@ -31,6 +31,9 @@ header {
   width: 80%;
   margin: 0 auto;
 }
+.nav__wrap a {
+  color: #ffffff;
+}
 
 .nav {
   background-color: #353738;
@@ -56,6 +59,9 @@ header {
 }
 .nav__links a:hover {
   color: rgb(77, 76, 76);
+}
+.nav__links a:active {
+  background-color: transparent;
 }
 
 .abrir-menu,
@@ -91,7 +97,7 @@ header {
   align-items: center;
 }
 .main .starIcon {
-  background-image: url(../../assets/estrellaWhiteColor.png);
+  background-image: url(../assets/estrellaWhiteColor.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 3rem;
@@ -165,7 +171,7 @@ header {
   align-items: center;
 }
 .portfolio .starIcon {
-  background-image: url(../../assets/estrellaPrimaryColor.png);
+  background-image: url(../assets/estrellaPrimaryColor.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 2.5rem;
@@ -201,7 +207,7 @@ header {
   align-items: center;
 }
 .about .starIcon {
-  background-image: url(../../assets/estrellaWhiteColor.png);
+  background-image: url(../assets/estrellaWhiteColor.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 2rem;
@@ -244,7 +250,7 @@ header {
   align-items: center;
 }
 .contact .starIcon {
-  background-image: url(../../assets/estrellaPrimaryColor.png);
+  background-image: url(../assets/estrellaPrimaryColor.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: 2.5rem;
@@ -371,9 +377,11 @@ header {
     opacity: 1;
     visibility: visible;
   }
-  .abrir-menu,
-  .cerrar-menu {
+  .abrir-menu {
     display: block;
+  }
+  .cerrar-menu {
+    display: none;
   }
   .main .title {
     text-align: center;
