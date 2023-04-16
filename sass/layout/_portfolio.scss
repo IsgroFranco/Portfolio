@@ -19,6 +19,12 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      a {
+        text-align: center;
+        text-decoration: none;
+        color: c.$secondary-color;
+        margin-bottom: 4rem;
+      }
       img {
         width: 100%;
         object-fit: cover;
@@ -29,7 +35,6 @@
       .portfolio__name {
         font-size: 1.1rem;
         padding: 0.5rem;
-        margin-bottom: 4rem;
       }
     }
   }

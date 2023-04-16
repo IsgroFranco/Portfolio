@@ -10,6 +10,10 @@
 
 header {
   background-color: #353738;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  box-shadow: 0px 1px 8px;
 }
 
 .nav {
@@ -19,11 +23,10 @@ header {
   justify-content: space-between;
   align-items: center;
   color: #ffffff;
-  border-bottom-left-radius: 0.5rem;
   margin: 0 auto;
   width: 90%;
+  height: 4.5rem;
   max-width: 1200px;
-  box-shadow: 0px 5px 5px -5px #000;
 }
 .nav__title {
   padding: 2rem;
@@ -55,7 +58,7 @@ header {
 .main__container {
   width: 250px;
   height: 250px;
-  margin: 4rem 0 1rem;
+  margin: 8rem 0 1rem;
 }
 .main__container img {
   width: 100%;
@@ -117,6 +120,12 @@ header {
   justify-content: center;
   align-items: center;
 }
+.portfolio__container .portfolio__item a {
+  text-align: center;
+  text-decoration: none;
+  color: #353738;
+  margin-bottom: 4rem;
+}
 .portfolio__container .portfolio__item img {
   width: 100%;
   -o-object-fit: cover;
@@ -128,7 +137,6 @@ header {
 .portfolio__container .portfolio__item .portfolio__name {
   font-size: 1.1rem;
   padding: 0.5rem;
-  margin-bottom: 4rem;
 }
 .portfolio__line {
   display: grid;
@@ -189,6 +197,7 @@ header {
   width: 400px;
   text-align: start;
   margin-bottom: 2rem;
+  letter-spacing: 1px;
 }
 .about__container p {
   font-size: 1.1rem;
@@ -228,11 +237,14 @@ header {
 .contact__wrap {
   display: flex;
   flex-direction: row;
+  gap: 3rem;
 }
 .contact__wrap .contact__container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 17rem;
+  padding: 2rem;
 }
 .contact__wrap .contact__container .contact__item {
   display: flex;
@@ -248,6 +260,61 @@ header {
   filter: invert(1);
 }
 .contact__wrap .contact__container .contact__span {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 1rem 0;
+}
+.contact__wrap .contact__container .number,
+.contact__wrap .contact__container .mail {
   font-size: 1.5rem;
-  font-weight: 300;
+}
+
+.footer {
+  background-color: #353738;
+  height: 20rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+}
+.footer__container {
+  margin-top: 5rem;
+  width: 80%;
+}
+.footer__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #ffffff;
+}
+.footer__item h4 {
+  font-size: 1.5rem;
+}
+.footer__item p {
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+.footer__item .linkedin {
+  border: 2px solid #ffffff;
+  border-radius: 50%;
+  width: 3.5em;
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+  color: #ffffff;
+}
+.footer__item .linkedin:hover {
+  background-color: #ffffff;
+  color: #353738;
+  transition: 400ms;
+}
+.footer__item .linkedin__logo {
+  margin: 0;
+  font-size: 1.5rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }/*# sourceMappingURL=main.css.map */

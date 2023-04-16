@@ -32,10 +32,13 @@
   &__wrap {
     display: flex;
     flex-direction: row;
+    gap: 3rem;
     .contact__container {
       display: flex;
       flex-direction: column;
       align-items: center;
+      width: 17rem;
+      padding: 2rem;
 
       .contact__item {
         display: flex;
@@ -51,8 +54,13 @@
         }
       }
       .contact__span {
+        font-size: 1rem;
+        font-weight: 600;
+        margin: 1rem 0;
+      }
+      .number,
+      .mail {
         font-size: 1.5rem;
-        font-weight: 300;
       }
     }
   }

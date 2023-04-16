@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mi Portfolio</title>
     <link rel="stylesheet" href="./sass/main.css" />
+    <link rel="stylesheet" href="" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@1,200&family=Roboto:wght@300;400;500&display=swap"
-      rel="stylesheet"
+      rel="shortcut icon"
+      href="./assets/Portfolio-modified.png"
+      type="image/x-icon"
     />
   </head>
   <body>
@@ -18,7 +20,7 @@
         <ul class="nav__links">
           <li class="nav__items"><a href="#portfolio">PORTFOLIO</a></li>
           <li class="nav__items"><a href="#about">ABOUT</a></li>
-          <li class="nav__items"><a href="#">CONTACT</a></li>
+          <li class="nav__items"><a href="#contact">CONTACT</a></li>
         </ul>
       </nav>
     </header>
@@ -32,7 +34,7 @@
         <div class="starIcon"></div>
         <div class="linea"></div>
       </div>
-      <h2>- Web designer -</h2>
+      <h2>- Frontend Developer -</h2>
     </section>
 
     <section class="portfolio" id="portfolio">
@@ -44,16 +46,25 @@
       </div>
       <div class="portfolio__container">
         <div class="portfolio__item">
-          <img src="./assets/calculadora.png" alt="Calculadora" />
-          <h3 class="portfolio__name">Calculadora</h3>
+          <a href="https://isgrofranco.github.io/Calculadora/" target="_blank">
+            <img src="./assets/calculadora.png" alt="Calculadora" />
+            <h3 class="portfolio__name">Calculadora</h3>
+          </a>
         </div>
         <div class="portfolio__item">
-          <img src="./assets/CarolaSound.jpg" alt="Carola Web" />
-          <h3 class="portfolio__name">Carola Web</h3>
+          <a
+            href="https://isgrofranco.github.io/Proyecto-Carola/#"
+            target="_blank"
+          >
+            <img src="./assets/CarolaSound.jpg" alt="Carola Web" />
+            <h3 class="portfolio__name">Carola Web</h3>
+          </a>
         </div>
         <div class="portfolio__item">
-          <img src="./assets/Portfolio.png" alt="Portfolio" />
-          <h3 class="portfolio__name">Portfolio</h3>
+          <a href="#">
+            <img src="./assets/Portfolio.png" alt="Portfolio" />
+            <h3 class="portfolio__name">Portfolio</h3>
+          </a>
         </div>
       </div>
     </section>
@@ -76,7 +87,7 @@
         </p>
       </div>
     </section>
-    <section class="contact">
+    <section class="contact" id="contact">
       <h3>CONTACT</h3>
       <div class="main__line">
         <div class="linea"></div>
@@ -84,27 +95,51 @@
         <div class="linea"></div>
       </div>
       <div class="contact__wrap">
-      <div class="contact__container">
-        <div class="contact__item">
-          <img src="./assets/phone.svg" alt="Phone" />
+        <div class="contact__container">
+          <div class="contact__item">
+            <img src="./assets/phone.svg" alt="Phone" />
+          </div>
+          <span class="contact__span">Phone</span>
+          <span class="number">(011) 6901-5267</span>
         </div>
-        <span class="contact__span">Phone</span>
-        <span>(011) 6901-5267</span>
-      </div>
-      <div class="contact__container">
-        <div class="contact__item">
-          <img src="./assets/mail.svg" alt="Email" />
+        <div class="contact__container">
+          <div class="contact__item">
+            <img src="./assets/mail.svg" alt="Email" />
+          </div>
+          <span class="contact__span">Email</span>
+          <span class="mail">isgro.franco1@gmail.com</span>
         </div>
-        <span class="contact__span">Email</span>
-        <span>isgro.franco1@gmail.com</span>
       </div>
-    </div>
-    </div>
     </section>
-    <footer>
-      <div class="footer__items"></div>
-      <div class="footer__items"></div>
-      <div class="footer__items"></div>
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__item">
+          <h4>LOCATION</h4>
+          <p>BUENOS AIRES, ARGENTINA</p>
+        </div>
+      </div>
+      <div class="footer__container">
+        <div class="footer__item">
+          <h4>AROUND THE WEB</h4>
+          <a
+            class="linkedin"
+            href="https://www.linkedin.com/in/francoisgro/"
+            target="_blank"
+            ><p class="linkedin__logo">in</p></a
+          >
+        </div>
+      </div>
+      <div class="footer__container">
+        <div class="footer__item">
+          <h4>ABOUT FREELANCER</h4>
+          <p>
+            Formar parte de un equipo de trabajo, cumplir los objetivos que se
+            solicitan y desempeñarme al máximo en el puesto, como así tambien
+            adquirir experiencia y capacitación, con el fin de cumplir todas las
+            expectativas
+          </p>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
