@@ -6,6 +6,7 @@
   text-decoration: none;
   font-family: "Prompt", "sans-serif";
   scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
 }
 
 header {
