@@ -367,12 +367,15 @@ header {
     top: 3.5rem;
     right: 0;
     bottom: 0;
+    left: 0;
     visibility: hidden;
+    text-align: center;
   }
   .nav__links {
     background-color: #353738;
     flex-direction: column;
     padding: 2rem;
+    width: 100%;
   }
   .visible {
     opacity: 1;
