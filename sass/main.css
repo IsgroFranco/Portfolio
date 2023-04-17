@@ -61,7 +61,7 @@ header {
   color: rgb(77, 76, 76);
 }
 .nav__links a:active {
-  background-color: transparent;
+  background-color: none;
 }
 
 .abrir-menu,
